@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TICTACTOE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <nav>
+      <h1>Tic Tac Toe</h1> 
+      <!-- <i class="fa-solid fa-bars menu" onclick="openSide()"></i> -->
+      <ul id="side-bar">
+        <!-- <li class="cros"><i class="fa-solid fa-x cross" onclick="closeSide()"></i><li> -->
+        <li><h4>Choose from these</h4></li>
+        <li onclick="vsFriend()" class="vfrnd">1.VS Friend<li>
+        <li  onclick="vsComputer()" class="vcomp">2.VS Computer</li>
+      </ul>
+    </nav>
+    <div class="container" id="body">
+      <div class="left-container">
+        <!-- <div class="COMPUTER"><h1>computer</h1></div>
+        <div class="USER"><h1>uer</h1></div> -->
+        <div class="ava-name">
+            <img src="img/user.jpg" alt="" class="avatar" id="pl1img">
+            <img src="img/excited.gif" alt="" class="avatar" style="display:none" id="pl1">
+            <h3 class="name1" id="player1">player1:X</h3>
+        </div>
+        <div class="vs">
+            <h2>VS</h2>
+        </div>
+        <div class="ava-name">
+            <img src="img/robot.jpg" alt="" class="avatar" id="pl2img">
+            <img src="img/excited.gif" alt="" class="avatar" style="display:none" id="pl2">
+            <h3 class="name2" id="player2">player2:O</h3>
+        </div>
+        
+      </div>
+      <div class="mid-container">
+        <div class="mid-div">
+          <div class="box bl bt"><span class="text"></span></div>
+          <div class="box bt"><span class="text"></span></div>
+          <div class="box bt br"><span class="text"></span></div>
+        </div>
+        <div class="mid-div">
+          <div class="box bl"><span class="text"></span></div>
+          <div class="box"><span class="text"></span></div>
+          <div class="box br"><span class="text"></span></div>
+        </div>
+        <div class="mid-div">
+          <div class="box bl bb"><span class="text"></span></div>
+          <div class="box bb"><span class="text"></span></div>
+          <div class="box br bb"><span class="text"></span></div>
+        </div>
+        <button onclick="reset()">Reset</button>
+      </div>
+      <!-- <div class="right-container">
+        <i class="fa-solid fa-bars menu"></i> 
+        <div class="r-contain" id="right">
+        <i class="fa-solid fa-x button" onclick="Closeside()"></i>
+        <ol>
+            <li>RESET</li>
+            <li>VSComputer</li>
+            <li>VSFriend</li>
+        </ol>
+        </div>
+      </div> -->
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>

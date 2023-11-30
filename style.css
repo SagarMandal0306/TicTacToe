@@ -1,0 +1,179 @@
+*{
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+}
+#side-bar{
+    float: right;
+   width:50vw;
+   position: absolute;
+   top: 30%;
+   right: 30%;
+   height: 35vh;
+  background-color: rgb(34, 34, 34);
+  padding-top: 25px;
+  transition: 0.3s;
+  text-align: center;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+}
+
+
+/* .cros{
+    position: absolute;
+    top: 0;
+    background-color: red;
+    width: 100%;
+    padding: 0;
+    display: none;
+    
+} */
+
+/* .menu{
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+} */
+
+nav ul li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+    transition: 0.4s;
+    
+}
+nav ul li:hover ,.active{
+    transform: translate(0px,-5px);
+    color:yellowgreen ;
+}
+nav ul h4{
+    background-color:  rgb(34, 34, 34);
+    margin-bottom: 10px;
+}
+
+.cros:hover,nav ul h4{
+    transform: none;
+}
+
+nav h1{
+    text-align: center;
+    width: 90%;
+    /* background-color: brown; */
+    padding: 10px 0;
+}
+.cross{
+    height: 21px;
+   width: 100%;
+   background-color: red;
+   border-radius: 2px;
+}
+
+
+
+
+
+
+.container{
+    /* display: flex; */
+    width:98vw;
+    height: 80vh;
+    justify-content:space-evenly;
+    align-items: center;
+    display: none;
+    
+}
+
+
+/* left part styling */
+.left-container{
+    display: flex;
+    justify-content:space-between;
+}
+.vs{
+   display: flex;
+   align-items: center;
+}   
+.ava-name{
+    padding: 20px;
+    text-align: center;
+}
+.avatar{
+    height: 10rem;
+}
+.name1 ,.name2{
+    border: 1px solid white;
+}
+
+
+
+
+/* middle part styling */
+.mid-container{
+    display: flex;
+    flex-direction: column;
+}
+.mid-div{
+    display: flex;
+}
+.box{
+    border:1px solid greenyellow;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(0, 0, 0);
+}
+.text{
+    font-size: 4rem;
+    color: rgb(166, 255, 0);
+    
+}
+
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.br{
+    border-right: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.mid-container button{
+    background-color: red;
+    outline: none;
+    width: 30%;
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:800px) {
+    #sidebar{
+        right: auto;
+    }
+    .container{
+        flex-direction: column;
+        height: 99vh;
+    }
+}
+
+
